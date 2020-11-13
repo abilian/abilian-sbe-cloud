@@ -26,6 +26,6 @@
     "sendgrid:starter"
   ],
   "scripts": {
-    "postdeploy": "flask db upgrade"
+    "postdeploy": "flask initdb"
   }
 }
