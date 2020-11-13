@@ -1,0 +1,22 @@
+{
+  "name": "Abilian SBE",
+  "description": "Open Source Social Extranet",
+  "keywords": [
+    "extranet"
+  ],
+  "website": "https://abilian.com/",
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:premium-0",
+    "sendgrid:starter"
+  ],
+  "env": {
+    "FLASK_SECRET_KEY": {
+      "description": "Secret key (some random string)",
+      "required": true
+    }
+  },
+  "scripts": {
+    "postdeploy": "flask db upgrade"
+  }
+}

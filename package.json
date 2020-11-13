@@ -1,0 +1,11 @@
+{
+  "name": "abilian-sbe-front",
+  "private": true,
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "less": "^3.9.0"
+  }
+}
