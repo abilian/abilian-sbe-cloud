@@ -4,6 +4,7 @@
   "keywords": [
     "extranet"
   ],
+  "repository": "https://github.com/abilian/abilia-sbe-cloud",
   "website": "https://abilian.com/",
   "buildpacks": [
     {
