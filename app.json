@@ -19,12 +19,6 @@
     "heroku-redis:hobby-dev",
     "sendgrid:starter"
   ],
-  "env": {
-    "FLASK_SECRET_KEY": {
-      "description": "Secret key (some random string)",
-      "required": true
-    }
-  },
   "scripts": {
     "postdeploy": "flask db upgrade"
   }
