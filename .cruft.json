@@ -1,6 +1,6 @@
 {
     "template": "https://github.com/abilian/cookiecutter-abilian-python.git",
-    "commit": "358777f86435a949dc560606030d228d99025098",
+    "commit": "8c6c74d8a64e04ad7266ea98cfafaab6265043c3",
     "context": {
         "cookiecutter": {
             "full_name": "Stefane Fermigier",
