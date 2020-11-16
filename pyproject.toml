@@ -1,10 +1,25 @@
 [tool.poetry]
-name = "abilian-sbe-demo"
+name = "abilian-sbe-cloud"
 version = "0.0.0"
 description = ""
 authors = ["Stefane Fermigier <sf@fermigier.com>"]
-
-packages = [{ include = "extranet" }]
+homepage = "https://github.com/sfermigier/abilian-sbe-cloud"
+description = "Cloud deployments for Abilian SBE"
+readme = "README.rst"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+]
+packages = [
+    { include = "extranet" },
+    { include = "tests", format = "sdist" },
+]
 
 
 [tool.poetry.dependencies]
