@@ -1,10 +1,10 @@
 .PHONY: all develop test lint clean doc format
 
 # The source directory
-SRC=python_boilerplate
+SRC=extranet
 
 # The package name
-PKG=python_boilerplate
+PKG=extranet
 
 
 all: test lint
