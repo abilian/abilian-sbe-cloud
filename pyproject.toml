@@ -44,6 +44,7 @@ flake8-super-call = "*"
 flake8-tidy-imports = "*"
 mastool = "*"
 mccabe = "*"
+mypy = "*"
 
 # Formatting
 isort = "*"
@@ -57,6 +58,7 @@ Flask-DebugToolbar = ">=0.10"
 # Other tools
 profilehooks = "*"
 pre-commit = "*"
+safety = "*"
 
 # Doc
 restructuredtext_lint = "*"
