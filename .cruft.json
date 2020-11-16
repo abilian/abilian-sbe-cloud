@@ -1,0 +1,24 @@
+{
+    "template": "https://github.com/abilian/cookiecutter-abilian-python.git",
+    "commit": "5b442f7aa8153140c922a47183cda533e33a1362",
+    "context": {
+        "cookiecutter": {
+            "full_name": "Stefane Fermigier",
+            "email": "sf@abilian.com",
+            "github_username": "sfermigier",
+            "project_name": "Abilian SBE Cloud",
+            "project_slug": "extranet",
+            "project_short_description": "Install Abilian SBE on the cloud",
+            "pypi_username": "sfermigier",
+            "version": "0.1.0",
+            "use_pytest": "y",
+            "use_pypi_deployment_with_travis": "n",
+            "add_pyup_badge": "y",
+            "command_line_interface": "Click",
+            "create_author_file": "y",
+            "open_source_license": "Apache Software License 2.0",
+            "_template": "https://github.com/abilian/cookiecutter-abilian-python.git"
+        }
+    },
+    "directory": null
+}
