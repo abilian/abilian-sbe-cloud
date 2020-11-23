@@ -5,19 +5,18 @@ description = "A framework for enterprise applications (CRM, ERP, collaboration.
 category = "main"
 optional = false
 python-versions = ">=3.6.1,<4"
-develop = false
 
 [package.dependencies]
 alembic = ">=0.9"
 bcrypt = "*"
 bleach = ">=2"
-celery = "~4"
+celery = ">=4,<5"
 clamd = "*"
 closure = "*"
 cssmin = "*"
 deprecated = "*"
 devtools = "*"
-Flask = "^1.0"
+Flask = ">=1.0,<2.0"
 Flask-Assets = ">=0.12"
 Flask-Babel = ">=0.11,<2"
 Flask-Login = ">=0.4"
@@ -34,25 +33,19 @@ pandas = ">=0.17"
 pathlib = "*"
 pillow = "*"
 pygeoip = "*"
-python-dateutil = "^2.4.0"
+python-dateutil = ">=2.4.0,<3.0.0"
 python-magic = "*"
 PyYAML = "*"
-redis = "~3"
+redis = ">=3,<4"
 sentry-sdk = {version = "*", extras = ["flask"]}
-SQLAlchemy = "^1.1"
+SQLAlchemy = ">=1.1,<2.0"
 sqlparse = "*"
 tqdm = "*"
-webassets = "< 2"
+webassets = "<2"
 werkzeug = "<1"
-Whoosh = "^2.5"
+Whoosh = ">=2.5,<3.0"
 WTForms-Alchemy = ">=0.12"
 wtforms-sqlalchemy = "*"
-
-[package.source]
-type = "git"
-url = "https://github.com/abilian/abilian-core.git"
-reference = "master"
-resolved_reference = "4f46f2ba454939ea85a4f90c79a3c5db4c19bbe9"
 
 [[package]]
 name = "abilian-sbe"
@@ -61,27 +54,20 @@ description = "Social Business platform, including: document management, wiki, f
 category = "main"
 optional = false
 python-versions = ">=3.6.1,<4"
-develop = false
 
 [package.dependencies]
 abilian-core = ">=0.11"
 chardet = "*"
 flask-babel = "<2"
-html2text = "^2020.1.16"
+html2text = ">=2020.1.16,<2021.0.0"
 langid = ">=1.1"
-markdown = "^3"
-openpyxl = "^2.3.0"
+markdown = ">=3,<4"
+openpyxl = ">=2.3.0,<3.0.0"
 toolz = "*"
 validate_email = "*"
 werkzeug = "<1"
 wtforms = "<2.2"
 xlwt = "*"
-
-[package.source]
-type = "git"
-url = "https://github.com/abilian/abilian-sbe.git"
-reference = "master"
-resolved_reference = "306e0099f05543a72dc53fbe4321f06bd6c8d57c"
 
 [[package]]
 name = "alembic"
@@ -1693,11 +1679,17 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.1,<4"
-content-hash = "fdd77cf72b5013a3269855f21197aa154a66f7abaed332385152d5c5fcbb1840"
+content-hash = "26c2bc0d6cead5c05ffd06d2911d72500bcc2ba2f0653e2e310d05a17e05c1f6"
 
 [metadata.files]
-abilian-core = []
-abilian-sbe = []
+abilian-core = [
+    {file = "abilian-core-0.11.15.tar.gz", hash = "sha256:6f263bd6fab0d6ebaf08f01aec72e2ed9694ea8b2612960c05ce75acc4a1c05d"},
+    {file = "abilian_core-0.11.15-py3-none-any.whl", hash = "sha256:a6bdf6ebb7edf549a410460162b339f1a9a6f5759fad088136cb4b9c9f3e5186"},
+]
+abilian-sbe = [
+    {file = "abilian-sbe-0.5.15.tar.gz", hash = "sha256:7f46ae091a57618e6ecc96ed8764116e3db3181630c3959eb1c9338d945f7601"},
+    {file = "abilian_sbe-0.5.15-py3-none-any.whl", hash = "sha256:4a4fc7137de2a22dffdb9e82304a400ac422805e69511eefd489f3232b8efbeb"},
+]
 alembic = [
     {file = "alembic-1.4.3-py2.py3-none-any.whl", hash = "sha256:4e02ed2aa796bd179965041afa092c55b51fb077de19d61835673cc80672c01c"},
     {file = "alembic-1.4.3.tar.gz", hash = "sha256:5334f32314fb2a56d86b4c4dd1ae34b08c03cae4cb888bc699942104d66bc245"},

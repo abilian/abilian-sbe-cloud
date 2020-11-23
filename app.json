@@ -22,8 +22,7 @@
   },
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "heroku-redis:hobby-dev",
-    "sendgrid:starter"
+    "heroku-redis:hobby-dev"
   ],
   "scripts": {
     "postdeploy": "flask initdb"

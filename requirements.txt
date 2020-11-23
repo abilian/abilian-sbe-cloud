@@ -1,5 +1,9 @@
-abilian-core @ git+https://github.com/abilian/abilian-core.git@master ; python_full_version >= "3.6.1" and python_version < "4"
-abilian-sbe @ git+https://github.com/abilian/abilian-sbe.git@master ; python_full_version >= "3.6.1" and python_version < "4"
+abilian-core==0.11.15; python_full_version >= "3.6.1" and python_version < "4" \
+    --hash=sha256:6f263bd6fab0d6ebaf08f01aec72e2ed9694ea8b2612960c05ce75acc4a1c05d \
+    --hash=sha256:a6bdf6ebb7edf549a410460162b339f1a9a6f5759fad088136cb4b9c9f3e5186
+abilian-sbe==0.5.15; python_full_version >= "3.6.1" and python_version < "4" \
+    --hash=sha256:7f46ae091a57618e6ecc96ed8764116e3db3181630c3959eb1c9338d945f7601 \
+    --hash=sha256:4a4fc7137de2a22dffdb9e82304a400ac422805e69511eefd489f3232b8efbeb
 alembic==1.4.3; python_full_version >= "3.6.1" and python_version < "4" \
     --hash=sha256:4e02ed2aa796bd179965041afa092c55b51fb077de19d61835673cc80672c01c \
     --hash=sha256:5334f32314fb2a56d86b4c4dd1ae34b08c03cae4cb888bc699942104d66bc245
