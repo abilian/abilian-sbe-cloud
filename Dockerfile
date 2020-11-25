@@ -19,7 +19,7 @@ COPY wsgi.py pyproject.toml poetry.lock README.md ./
 ADD extranet /home/web/extranet
 ADD tests /home/web/tests
 
-RUN poetry install
+RUN poetry install --no-dev
 
 ENV FLASK_SECRET_KEY topsecret
 ENV SECRET_KEY topsecret
