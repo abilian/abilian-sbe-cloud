@@ -1,9 +1,5 @@
-abilian-core==0.11.16; python_full_version >= "3.6.1" and python_version < "4" \
-    --hash=sha256:73688eb3ac92b5cb48b096e72b101a22e67a3710b65b0ac263fb38fb71b31026 \
-    --hash=sha256:4536d0d36021b9ca9c867924b73fa26aa4d9742728c6a4721052dec682873d9a
-abilian-sbe==0.5.16; python_full_version >= "3.6.1" and python_version < "4" \
-    --hash=sha256:0c9d6861cac7d2ecdbf56c7374add4d4148398bd87acf1b54ead93ef32b9bd17 \
-    --hash=sha256:7dee23638ca0c93db5aa5337e6625b016ea9b416b47ac4e074b91462df71713e
+abilian-core @ https://github.com/abilian/abilian-core/archive/master.zip ; python_full_version >= "3.6.1" and python_version < "4"
+abilian-sbe @ https://github.com/abilian/abilian-sbe/archive/master.zip ; python_full_version >= "3.6.1" and python_version < "4"
 alembic==1.4.3; python_full_version >= "3.6.1" and python_version < "4" \
     --hash=sha256:4e02ed2aa796bd179965041afa092c55b51fb077de19d61835673cc80672c01c \
     --hash=sha256:5334f32314fb2a56d86b4c4dd1ae34b08c03cae4cb888bc699942104d66bc245

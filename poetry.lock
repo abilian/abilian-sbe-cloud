@@ -47,6 +47,9 @@ Whoosh = ">=2.5,<3.0"
 WTForms-Alchemy = ">=0.12"
 wtforms-sqlalchemy = "*"
 
+[package.source]
+type = "url"
+url = "https://github.com/abilian/abilian-core/archive/master.zip"
 [[package]]
 name = "abilian-sbe"
 version = "0.5.16"
@@ -69,6 +72,9 @@ werkzeug = "<1"
 wtforms = "<2.2"
 xlwt = "*"
 
+[package.source]
+type = "url"
+url = "https://github.com/abilian/abilian-sbe/archive/master.zip"
 [[package]]
 name = "alembic"
 version = "1.4.3"
@@ -1682,17 +1688,11 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.1,<4"
-content-hash = "26c2bc0d6cead5c05ffd06d2911d72500bcc2ba2f0653e2e310d05a17e05c1f6"
+content-hash = "b3c9df4fe112651a6e80640653e24f5cf6dd47ed021ae2fa229215545e76953a"
 
 [metadata.files]
-abilian-core = [
-    {file = "abilian-core-0.11.16.tar.gz", hash = "sha256:73688eb3ac92b5cb48b096e72b101a22e67a3710b65b0ac263fb38fb71b31026"},
-    {file = "abilian_core-0.11.16-py3-none-any.whl", hash = "sha256:4536d0d36021b9ca9c867924b73fa26aa4d9742728c6a4721052dec682873d9a"},
-]
-abilian-sbe = [
-    {file = "abilian-sbe-0.5.16.tar.gz", hash = "sha256:0c9d6861cac7d2ecdbf56c7374add4d4148398bd87acf1b54ead93ef32b9bd17"},
-    {file = "abilian_sbe-0.5.16-py3-none-any.whl", hash = "sha256:7dee23638ca0c93db5aa5337e6625b016ea9b416b47ac4e074b91462df71713e"},
-]
+abilian-core = []
+abilian-sbe = []
 alembic = [
     {file = "alembic-1.4.3-py2.py3-none-any.whl", hash = "sha256:4e02ed2aa796bd179965041afa092c55b51fb077de19d61835673cc80672c01c"},
     {file = "alembic-1.4.3.tar.gz", hash = "sha256:5334f32314fb2a56d86b4c4dd1ae34b08c03cae4cb888bc699942104d66bc245"},

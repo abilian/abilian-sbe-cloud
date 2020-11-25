@@ -24,9 +24,11 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.6.1,<4"
 
-# abilian-core = {git = "https://github.com/abilian/abilian-core.git"}
-# abilian-sbe = {git = "https://github.com/abilian/abilian-sbe.git"}
-abilian-sbe = "*"
+#abilian-core = {git = "https://github.com/abilian/abilian-core.git"}
+#abilian-sbe = {git = "https://github.com/abilian/abilian-sbe.git"}
+# abilian-sbe = "*"
+abilian-core = {url = "https://github.com/abilian/abilian-core/archive/master.zip"}
+abilian-sbe = {url = "https://github.com/abilian/abilian-sbe/archive/master.zip"}
 
 psycopg2-binary = "*"
 

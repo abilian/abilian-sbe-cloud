@@ -1,4 +1,6 @@
-FROM python:3.8-slim-buster
+#FROM python:3.8-slim-buster
+
+FROM python:3.8-buster
 
 RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
@@ -25,4 +27,5 @@ ENV FLASK_SECRET_KEY topsecret
 ENV SECRET_KEY topsecret
 EXPOSE 5000
 
+#CMD [ "sleep", "100000" ]
 CMD [ "poetry", "run", "flask", "run" ]
