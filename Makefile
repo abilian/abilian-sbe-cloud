@@ -145,7 +145,7 @@ update-pot:
 update-deps:
 	pip install -U pip setuptools wheel
 	poetry update
-	poetry export -o requirements.txt
+	poetry export --without-hashes -o requirements.txt
 
 publish: clean
 	git push --tags
