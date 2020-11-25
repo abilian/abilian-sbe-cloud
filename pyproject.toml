@@ -4,7 +4,7 @@ version = "0.0.0"
 authors = ["Stefane Fermigier <sf@fermigier.com>"]
 homepage = "https://github.com/sfermigier/abilian-sbe-cloud"
 description = "Cloud deployments for Abilian SBE"
-readme = "README.rst"
+readme = "README.md"
 classifiers=[
     'Development Status :: 2 - Pre-Alpha',
     'Intended Audience :: Developers',
