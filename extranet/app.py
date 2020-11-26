@@ -129,8 +129,9 @@ MAIN = Blueprint("main", __name__, url_prefix="")
 
 @MAIN.route("/")
 def home():
-    """
-    Home page. Actually there is no home page, so we redirect to the most
+    """Home page.
+
+    Actually there is no home page, so we redirect to the most
     appropriate place.
     """
     return redirect(url_for("social.home"))
@@ -155,9 +156,7 @@ class Application(BaseApplication):
 
 
 def login_required():
-    """
-    Before request handler to ensure login is required on any view
-    """
+    """Before request handler to ensure login is required on any view."""
     if current_app.config.get("NO_LOGIN"):
         return
 
@@ -179,8 +178,6 @@ def login_required():
 
 
 def on_home_blueprint(endpoint, values):
-    """
-    url_value_preprocessor attached to blueprint used for 'home'
-    """
+    """url_value_preprocessor attached to blueprint used for 'home'."""
     if endpoint == HOME_ACTION.endpoint.name:
         g.nav["active"] = HOME_ACTION.path

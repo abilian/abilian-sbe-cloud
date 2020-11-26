@@ -8,7 +8,6 @@ from abilian.services import get_service
 from abilian.services.security import Admin
 from abilian.web import url_for
 
-
 ENDPOINTS_TO_IGNORE = [
     "admin.audit_search_users",
     "bilan.export_xls",
